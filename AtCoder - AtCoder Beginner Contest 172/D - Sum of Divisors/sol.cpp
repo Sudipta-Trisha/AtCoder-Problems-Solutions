@@ -8,11 +8,19 @@
 **/
 
 #include<bits/stdc++.h>
-using namespace std;
-
-int main(){
-
-	
-
+#define ll long long int
+using  namespace std;
+ 
+int main()
+{
+    ll a,sum=0;
+    cin >> a;
+    
+    for(ll i=1; i<=a; i++){
+        for(ll j=i; j<=a; j=j+i){
+            sum = sum + j;
+        }
+    }
+    cout<< sum <<endl;
     return 0;
 }
